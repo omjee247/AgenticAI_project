@@ -1,0 +1,25 @@
+[project]
+name = "langchaincourse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Om Jee", email = "omjee2906@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "ipykernel>=6.31.0",
+    "langchain>=0.3.30",
+    "langchain-community>=0.3.31",
+    "langchain-google-genai>=2.1.12",
+    "langchain-groq>=0.3.8",
+    "langchain-openai>=0.3.35",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+langchaincourse = "langchaincourse:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
