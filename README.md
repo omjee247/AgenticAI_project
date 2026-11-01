@@ -23,23 +23,22 @@ A hands-on journey through building modern LLM applications, autonomous agents, 
 
 Using [`uv`](https://docs.astral.sh/uv/) (recommended):
 ```bash
-# Install dependencies and sync virtual environment
-uv sync
-```
+# 1. Create a virtual environment
+uv venv
 
-Or using standard `pip`:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+# 2. Activate the virtual environment
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+
+# 3. Install dependencies and packages
+uv add -r requirements.txt
+uv add ipykernel
+uv add langchain
 ```
 
 ### 2. Configure API Keys
 
 Create a `.env` file in the root directory:
-```bash
-cp .env.example .env
-```
+
 
 Add your API credentials:
 ```env
